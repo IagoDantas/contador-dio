@@ -1,6 +1,10 @@
 let count = 0;
 
 const CURRENT_NUMBER = document.getElementById('currentNumber');
+const INCREMENT = document.getElementById('increment');
+const DECREMENT = document.getElementById('decrement');
+
+
 
 function turnRed(){
 	if(count < 0){
@@ -11,14 +15,14 @@ function turnRed(){
 	}
 }
 
-function increment() {
+INCREMENT.addEventListener("click", function () {
 	count++;
 	CURRENT_NUMBER.innerHTML = count;
 	turnRed();
-}
+})
 
-function decrement() {
+DECREMENT.addEventListener("click", function () {
 	count--;
 	CURRENT_NUMBER.innerHTML = count;
 	turnRed();
-}
+})
