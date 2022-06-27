@@ -1,2 +1,2 @@
-# Contador
-# Módulo da DIO de introdução ao javacript
+# counter
+# DIO module introducing javascript
